@@ -14,10 +14,11 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ github.event_name}}"
-      - run: echo "${{ github.ref }}"
+      - run: |
+          echo "${{ github.event_name}}"
+          echo "${{ github.ref }}"
 
       - uses: actions/checkout@v3.3.0
 
       - name: List files in the repository
-        run: tree
+        run: echo tree
