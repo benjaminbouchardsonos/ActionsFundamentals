@@ -3,7 +3,7 @@ name: Workflow for hello world Docker
 on:
   push:
     branches: main
-    paths: hellow-world-docker-action/**
+    paths: hello-world-docker-action/**
   workflow_dispatch:
 
 jobs:
